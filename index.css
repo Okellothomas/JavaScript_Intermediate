@@ -1,0 +1,9 @@
+body{
+    background-image: url(backone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(to right, #d5dcd5, #d5b8b8, #b8b5b0); */
+    align-items: center;
+    text-align: center;
+    color: white;
+}
