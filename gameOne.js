@@ -43,3 +43,15 @@ incremtals()
 incremtals()
 
 console.log(incremtals())
+
+
+/**
+ * Strings challange
+ */
+
+var myName = "Okello"
+let greetings = "Hi, my name is"
+
+let yourGreatings = greetings + " " + myName + "!"
+
+console.log(yourGreatings)
