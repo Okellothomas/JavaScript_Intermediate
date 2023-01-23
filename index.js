@@ -22,6 +22,8 @@ function sub() {
 let mySave = document.getElementById("savedata")
 
 function save() {
-    let mydata = count + "-"
+    let mydata = count + " - "
     mySave.innerHTML += mydata
+    mydata = 0
+    myCount.textContent = mydata
 }
