@@ -12,3 +12,11 @@ function add() {
 function sub() {
     myCount.innerHTML = count --
 }
+
+/**
+ * the save button function
+ */
+
+function save() {
+    console.log(count)
+}
