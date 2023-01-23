@@ -17,6 +17,11 @@ function sub() {
  * the save button function
  */
 
+
+
+let mySave = document.getElementById("savedata")
+
 function save() {
-    console.log(count)
+    let mydata = count + "-"
+    mySave.innerHTML += mydata
 }
