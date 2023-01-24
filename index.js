@@ -27,3 +27,4 @@ function save() {
     mydata = 0
     myCount.textContent = mydata
 }
+
