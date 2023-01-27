@@ -4,7 +4,8 @@
 
 let firstCard = 10
 let secondCard = 11
-let sum = firstCard + secondCard
+let Cards = [firstCard, secondCard]
+let sum = Cards[0] + Cards[1]
 let isAlive = false
 let message = ""
 
@@ -13,6 +14,10 @@ let mySum = document.getElementById("sum")
 let myCards = document.getElementById("cards")
 
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
 if (sum <= 20) {
     message = "Do you want to draw another card!"
     isAlive = false
@@ -25,11 +30,23 @@ if (sum <= 20) {
 }
     messageEl.textContent = message
     mySum.textContent = "Sum: " + sum
-    myCards.textContent = "Cards: " + firstCard + secondCard
+    myCards.textContent = "Cards: " + Cards[0] + Cards[1]
 }
 
 function newGame() {
-    console.log("Render a new Game Please!")
+    let thirdCard = 4;
+    Cards.push(thirdCard)
+    sum += Cards[2]
+    renderGame()
 }
+
+// arrays practice
+
+// let myArrays = [1, 3, 4]
+
+// let the = myArrays.pop()
+
+
+// console.log(the)
 
 
