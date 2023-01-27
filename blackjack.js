@@ -8,8 +8,12 @@ let sum = firstCard + secondCard
 let isAlive = false
 let message = ""
 
+let messageEl = document.getElementById("message")
+let mySum = document.getElementById("sum")
+let myCards = document.getElementById("cards")
+
 function startGame() {
-   if (sum <= 20) {
+if (sum <= 20) {
     message = "Do you want to draw another card!"
     isAlive = false
 } else if (sum === 21) {
@@ -19,12 +23,13 @@ function startGame() {
     message = "You have lost! and you are out of the game"
     isAlive = false
 }
-    console.log(message)
-    console.log(isAlive) 
-    
+    messageEl.textContent = message
+    mySum.textContent = "Sum: " + sum
+    myCards.textContent = "Cards: " + firstCard + secondCard
 }
 
-startGame()
-
+function newGame() {
+    console.log("Render a new Game Please!")
+}
 
 
