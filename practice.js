@@ -44,3 +44,4 @@ removePoint()
 add3Points()
 
 console.log(myPoints)
+
