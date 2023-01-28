@@ -49,4 +49,33 @@ function newGame() {
 
 // console.log(the)
 
+/**
+ * loops practice
+ */
+
+// let i = 10
+
+// do {
+//     console.log(i)
+//     i+=10
+// }while(i <= 100)
+
+// the while loop
+
+// let i = 5
+
+// while (i <= 25) {
+//     console.log(i)
+//     i+=5
+// }
+
+// the forloop with elements of an array
+
+let myarray = ["one", "two", "three", "four", 4, 5, 6, 7, 9]
+
+for (let i = 0; i <= myarray.length; i++){
+    console.log(i)
+    console.log(myarray[i])
+}
+
 

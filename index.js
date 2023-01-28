@@ -28,3 +28,24 @@ function save() {
     myCount.textContent = mydata
 }
 
+/**
+ * control flows implementation
+ */
+
+
+
+for (let i = 0; i <= 6; i++){
+    console.log(i)
+}
+
+let i = 0
+
+do {
+    console.log("We")
+    i++
+} while (i < 6)
+
+while (i <= 6) {
+    console.log("You")
+    i++
+}
