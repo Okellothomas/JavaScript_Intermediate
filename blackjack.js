@@ -2,8 +2,8 @@
  * Black Jack 
  */
 
-let firstCard = 4
-let secondCard = 8
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let Cards = [firstCard, secondCard]
 let sum = Cards[0] + Cards[1]
 let isAlive = false
@@ -14,7 +14,15 @@ let mySum = document.getElementById("sum")
 let myCards = document.getElementById("cards")
 
 function startGame() {
-    renderGame()
+    if (sum <= 21) {
+        renderGame()
+    } else {
+        firstCard = getRandomCard()
+        secondCard = getRandomCard()
+        Cards = [firstCard, secondCard]
+        sum = Cards[0] + Cards[1]
+    }
+    
 }
 
 function renderGame() {
@@ -30,17 +38,26 @@ if (sum <= 20) {
 }
     messageEl.textContent = message
     mySum.textContent = "Sum: " + sum
-    myCards.textContent = "Cards: " + Cards[0] + Cards[1]
+    myCards.textContent = "Cards: "
+
+    for (let i = 0; i < Cards.length; i++){
+        myCards.textContent += Cards[i] + " "
+    }
 }
 
 function newGame() {
-    let thirdCard = 4;
+    let thirdCard = getRandomCard()
     Cards.push(thirdCard)
-    for (let i = 2; i <= Cards.length; i++){
+    for (let i = 2; i < Cards.length; i++){
         sum += Cards[i]
     }
     // sum += Cards[2]
     renderGame()
+}
+
+function getRandomCard() {
+    // return Math.floor(Math.random() * 12) + 1
+    return Math.ceil(Math.random() * 12) + 1
 }
 
 // arrays practice
@@ -85,21 +102,21 @@ function newGame() {
  * more on control loops implemenation 
  */
 
-theCards = [1, 2, 3]
+// theCards = [1, 2, 3]
 
-let i = 0
+// let i = 0
 
-do {
-    sum += theCards[i]
-    console.log(sum)
-    i++
-}while(i < theCards.length)
+// do {
+//     sum += theCards[i]
+//     console.log(sum)
+//     i++
+// }while(i < theCards.length)
 
-let thsum = 0
-for (let i = 0; i <= theCards.length; i++){
-    thsum += theCards[i]
-}
+// let thsum = 0
+// for (let i = 0; i < theCards.length; i++){
+//     thsum += theCards[i]
+// }
 
-console.log(thsum)
-console.log(typeof(thsum))
+// console.log(thsum)
+// console.log(typeof(thsum))
 
