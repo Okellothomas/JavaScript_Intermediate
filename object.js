@@ -63,4 +63,21 @@ function Age() {
 
 Age()
 
+/**
+ * The forloop challange
+ */
+
+let powerfulcountry = ["USA", "CHINA", "UK", "FRANCE", "GERMAN"]
+
+function Power() {
+    console.log("The five most powerful countries in the World!")
+    let i = 0
+    do {
+        console.log(powerfulcountry[i])
+        i++
+    }while(i < powerfulcountry.length)
+}
+
+Power()
+
 
