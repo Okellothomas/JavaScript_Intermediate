@@ -19,8 +19,9 @@ mybutton.addEventListener("click", function () {
 /**
  * Event listner example
  */
-
-let myOpen = document.getElementById("open")
+let leads = []
+const myOpen = document.getElementById("open")
+const inputEl = document.querySelector("#save")
 
 myOpen.addEventListener("click", function () {
     console.log("I want to open box when clicked!")
@@ -30,6 +31,5 @@ myOpen.addEventListener("click", function () {
  * More variables declarations
  */
 
-let leads = []
-let inputEl = document.querySelector("#save")
+
 
