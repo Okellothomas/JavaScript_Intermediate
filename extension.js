@@ -13,7 +13,10 @@ mybutton.addEventListener("click", function () {
 
 // log out the leads
 
-
-
+let i = 0
+do {
+    console.log("- " + leads[i])
+    i++
+}while(i < leads.length)
 
 
