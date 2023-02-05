@@ -2,9 +2,10 @@
 /**
  * Add the event listiner
  */
-let leads = []
+let leads = ["One"]
 let myOpen = document.getElementById("open")
 let mybutton = document.getElementById("save")
+const ulEl = document.getElementById("ul")
 
 mybutton.addEventListener("click", function () {
     leads.push(myOpen.value)
@@ -15,7 +16,7 @@ mybutton.addEventListener("click", function () {
 
 let i = 0
 do {
-    console.log("- " + leads[i])
+    ulEl.textContent = "- " + leads[i]
     i++
 }while(i < leads.length)
 
