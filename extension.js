@@ -18,6 +18,17 @@ let i = 0
 do {
     ulEl.innerHTML += "<li> " + leads[i] + "</li>"
     i++
-}while(i < leads.length)
+} while (i < leads.length)
+
+// inner html challange
+
+const buy = document.querySelector("#buy")
+const thank = document.getElementById("buy")
+
+buy.innerHTML = "<button>" + "Buy!" + "</button>"
+
+buy.addEventListener("click", function () {
+    thank.innerHTML += "<p>" + "thank you so much" + "</p>"
+})
 
 
