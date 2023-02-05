@@ -1,35 +1,19 @@
-/**
- * code implementation
- */
-
-function Myave() {
-    console.log("button Clicked")
-}
 
 /**
  * Add the event listiner
  */
-
+let leads = []
+let myOpen = document.getElementById("open")
 let mybutton = document.getElementById("save")
 
 mybutton.addEventListener("click", function () {
-    console.log("Just got clicked")
+    leads.push(myOpen.value)
+    console.log(leads)
 })
 
-/**
- * Event listner example
- */
-let leads = []
-const myOpen = document.getElementById("open")
-const inputEl = document.querySelector("#save")
+// log out the leads
 
-myOpen.addEventListener("click", function () {
-    console.log("I want to open box when clicked!")
-})
 
-/**
- * More variables declarations
- */
 
 
 
