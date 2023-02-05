@@ -1,11 +1,8 @@
 /**
  * Black Jack 
  */
-
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
-let Cards = [firstCard, secondCard]
-let sum = Cards[0] + Cards[1]
+let Cards = []
+let sum = 0
 let isAlive = false
 let message = ""
 
@@ -14,14 +11,22 @@ let mySum = document.getElementById("sum")
 let myCards = document.getElementById("cards")
 
 function startGame() {
-    if (sum <= 21) {
-        renderGame()
-    } else {
-        firstCard = getRandomCard()
-        secondCard = getRandomCard()
-        Cards = [firstCard, secondCard]
-        sum = Cards[0] + Cards[1]
+    // if (sum <= 21) {
+    //     renderGame()
+    // } else {
+    //     firstCard = getRandomCard()
+    //     secondCard = getRandomCard()
+    //     Cards = [firstCard, secondCard]
+    //     sum = Cards[0] + Cards[1]
+    // }
+
+    isAlive = true
+    let firstCard = Cards.push(getRandomCard()) 
+    let secondCard = Cards.push(getRandomCard()) 
+    for (let i = 0; i < Cards.length; i++){
+        sum += Cards[i]
     }
+    renderGame()
     
 }
 
