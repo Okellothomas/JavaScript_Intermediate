@@ -25,3 +25,11 @@ let myOpen = document.getElementById("open")
 myOpen.addEventListener("click", function () {
     console.log("I want to open box when clicked!")
 })
+
+/**
+ * More variables declarations
+ */
+
+let leads = []
+let inputEl = document.querySelector("#save")
+
