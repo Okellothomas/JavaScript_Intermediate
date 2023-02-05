@@ -80,4 +80,26 @@ function Power() {
 
 Power()
 
+/**
+ * push(), pop(), shift(), unshift() methods
+ */
 
+let populuscountries = ["albama", "India", "USA", "conto", "Pakistan"]
+
+populuscountries.pop()
+populuscountries.pop()
+populuscountries.push("AFRICA")
+populuscountries.push("PAKISTANI")
+
+populuscountries.shift()
+populuscountries.unshift("CHINA")
+function myPopulus() {
+    console.log("These are the most populous nations in the World!")
+    let i = 0
+    while (i < populuscountries.length) {
+        console.log("- " + populuscountries[i])
+        i++
+    }
+}
+
+myPopulus()
