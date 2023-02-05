@@ -57,7 +57,16 @@ function newGame() {
 
 function getRandomCard() {
     // return Math.floor(Math.random() * 12) + 1
-    return Math.ceil(Math.random() * 12) + 1
+    // add modifications
+    let num1 = Math.ceil(Math.random() * 11) + 1
+    if (num1 == 1) {
+        return 11
+    } else if (num1 == 11 || num1 == 12 || num1 == 13) {
+        return 10
+    } else {
+        return num1
+    }
+    // return Math.ceil(Math.random() * 11) + 1
 }
 
 // arrays practice
