@@ -12,3 +12,23 @@ a{
     color: white;
     padding: 10px;
 }
+button {
+    color: rgb(185, 11, 144);
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+    margin-bottom: 20px;
+}
