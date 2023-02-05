@@ -13,22 +13,35 @@ mybutton.addEventListener("click", function () {
 })
 
 // log out the leads
+let listItems = ""
 
 let i = 0
 do {
-    ulEl.innerHTML += "<li> " + leads[i] + "</li>"
+    listItems += "<li> " + leads[i] + "</li>"
     i++
 } while (i < leads.length)
 
+ulEl.innerHTML = listItems
+
+/**
+ * Use the forloop and the other implementation
+ */
+
+for (let i = 0; i < leads.length; i++){
+    const li = document.createElement("li")
+    li.textContent += leads[i]
+    ulEl.append(li)
+}
+
 // inner html challange
 
-const buy = document.querySelector("#buy")
-const thank = document.getElementById("buy")
+// const buy = document.querySelector("#buy")
+// const thank = document.getElementById("buy")
 
-buy.innerHTML = "<button>" + "Buy!" + "</button>"
+// buy.innerHTML = "<button>" + "Buy!" + "</button>"
 
-buy.addEventListener("click", function () {
-    thank.innerHTML += "<p>" + "thank you so much" + "</p>"
-})
+// buy.addEventListener("click", function () {
+//     thank.innerHTML += "<p>" + "thank you so much" + "</p>"
+// })
 
 
