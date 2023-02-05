@@ -5,7 +5,6 @@ let Cards = []
 let sum = 0
 let isAlive = false
 let message = ""
-
 let messageEl = document.getElementById("message")
 let mySum = document.getElementById("sum")
 let myCards = document.getElementById("cards")
@@ -29,17 +28,33 @@ function startGame() {
     renderGame()
     
 }
+/**
+ * simple object implementation
+ */
+
+let player = {
+    name: "Okello",
+    status: "New",
+    chips: "$150"
+}
+
+let myPlayer = document.getElementById("player")
+
+myPlayer.textContent = player.status + ": " + player.name + ": " + player.chips
 
 function renderGame() {
 if (sum <= 20) {
     message = "Do you want to draw another card!"
-    isAlive = false
+    isAlive = true
+    hasBlackJack = false
 } else if (sum === 21) {
     message = "Wow! you have got your black card!"
     isAlive = true
+    hasBlackJack = true
 } else {
     message = "You have lost! and you are out of the game"
     isAlive = false
+    hasBlackJack = false
 }
     messageEl.textContent = message
     mySum.textContent = "Sum: " + sum
@@ -51,13 +66,16 @@ if (sum <= 20) {
 }
 
 function newGame() {
-    let thirdCard = getRandomCard()
-    Cards.push(thirdCard)
-    for (let i = 2; i < Cards.length; i++){
-        sum += Cards[i]
-    }
-    // sum += Cards[2]
-    renderGame()
+
+    if (isAlive === true && hasBlackJack === false) {
+        let thirdCard = getRandomCard()
+        Cards.push(thirdCard)
+        for (let i = 2; i < Cards.length; i++){
+            sum += Cards[i]
+        }
+        // sum += Cards[2]
+        renderGame()
+        }
 }
 
 function getRandomCard() {
@@ -134,3 +152,33 @@ function getRandomCard() {
 // console.log(thsum)
 // console.log(typeof(thsum))
 
+
+/**
+ * Boolean expression
+ */
+
+let hasSolvedChallange = false
+let hasHintsLeft = false
+
+if (hasSolvedChallange === false && hasHintsLeft === false) {
+    showSolution()
+}
+
+function showSolution() {
+    console.log("Showing the solution....")
+}
+
+/**
+ * Doumentaries
+ */
+
+let likesDocumentaries = true
+let likeStartUps = true
+
+if (likeStartUps === true || likesDocumentaries === true) {
+    recommendMovie()
+}
+
+function recommendMovie() {
+    console.log("He, check out the new movie....")
+}
