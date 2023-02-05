@@ -93,6 +93,7 @@ populuscountries.push("PAKISTANI")
 
 populuscountries.shift()
 populuscountries.unshift("CHINA")
+
 function myPopulus() {
     console.log("These are the most populous nations in the World!")
     let i = 0
@@ -103,3 +104,19 @@ function myPopulus() {
 }
 
 myPopulus()
+
+
+/**
+ * operator
+ */
+
+let day = 21
+let weekDay = "Friday"
+
+function Week() {
+    if (day === 21 && weekDay === "Friday") {
+        console.log("Don't scare me please!")
+    }
+}
+
+Week()
