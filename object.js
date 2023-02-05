@@ -13,3 +13,30 @@ let castle = {
 console.log(castle.place)
 console.log(castle["cost"])
 console.log(castle.weather)
+
+/**
+ * Object challange
+ */
+
+let dancer = {
+    name: "Okello Thomas",
+    salary: 90022
+}
+
+let theDancer = document.getElementById("dancer")
+theDancer.textContent = dancer.name + ": $" + dancer.salary 
+
+/**
+ * function object challange
+ */
+let country = {
+    name: "Okello",
+    country: "Kenya",
+    age: 26
+}
+
+function logData() {
+    console.log( country.name + " is " + country.age + " old and lives in " + country.country )
+}
+
+logData()
