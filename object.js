@@ -154,3 +154,22 @@ theGame()
 /**
  * The next challange
  */
+
+let fruits = ["Orange", "Apple", "Orange", "Orange", "Apple"]
+
+let oranges = document.getElementById("oranges")
+let apples = document.getElementById("apples")
+
+function myfruits() {
+    let i = 0
+    do {
+        if (fruits[i] === "Orange") {
+            oranges.textContent += " Orange "
+        } else if (fruits[i] === "Apple") {
+            apples.textContent += " Apples "
+        }
+        i++
+    } while (i < fruits.length)
+}
+
+myfruits()
