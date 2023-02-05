@@ -139,3 +139,14 @@ function Game() {
 }
 
 Game()
+
+/**
+ * Another key implemtation without using the if else statment
+ */
+
+function theGame() {
+    let random = Math.floor(Math.random() * 3)
+    console.log( hand[random] )
+}
+
+theGame()
