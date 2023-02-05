@@ -42,5 +42,25 @@ function logData() {
 logData()
 
 /**
- * 
+ * else if challange
  */
+
+var myAge = 30
+
+function Age() {
+  if (myAge < 6) {
+        console.log("Free travel")
+    } else if (myAge >= 6 && myAge <= 17) {
+        console.log("Child discount")
+    } else if (myAge >= 18 && myAge <= 26) {
+        console.log("student discount")
+    } else if (myAge >= 27 && myAge <= 66) {
+        console.log("Full price")
+    } else {
+        console.log("Senior citizen Discount")
+    }  
+}
+
+Age()
+
+
