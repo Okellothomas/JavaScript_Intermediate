@@ -124,3 +124,18 @@ Week()
 /**
  * The random challange
  */
+
+let hand = ["rock", "paper", "scisor"]
+
+function Game() {
+    let random = Math.ceil(Math.random() * 3)
+    if (random === 1) {
+        console.log(hand[0])
+    } else if (random === 2) {
+        console.log(hand[1])
+    } else {
+        console.log(hand[2])
+    }
+}
+
+Game()
