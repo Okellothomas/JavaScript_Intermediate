@@ -22,10 +22,15 @@ function render() {
     do {
         listItems += "<li><a target='_blank' href='" + leads[i] + "'>" + leads[i] + "</a></li>"
         // Working with template strings
+        myListItems = `<li>
+                            <a target = '_blank' href ='${leads[i]}'>
+                                ${leads[i]}
+                            </a>
+                       </li>`
         i++
     } while (i < leads.length)
 
-    ulEl.innerHTML = listItems
+    ulEl.innerHTML = myListItems
 }
 
 
