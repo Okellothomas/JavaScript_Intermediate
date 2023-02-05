@@ -21,7 +21,7 @@ function render() {
     let i = 0
     do {
         listItems += "<li><a target='_blank' href='" + leads[i] + "'>" + leads[i] + "</a></li>"
-        console.log(listItems)
+        // Working with template strings
         i++
     } while (i < leads.length)
 
