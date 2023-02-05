@@ -20,7 +20,8 @@ function render() {
 
     let i = 0
     do {
-        listItems += "<li><a href='#'>" + leads[i] + "</a></li>"
+        listItems += "<li><a target='_blank' href='" + leads[i] + "'>" + leads[i] + "</a></li>"
+        console.log(listItems)
         i++
     } while (i < leads.length)
 
