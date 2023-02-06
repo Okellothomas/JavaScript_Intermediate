@@ -3,10 +3,11 @@
  * Add the event listiner
  */
 let leads = []
-let myOpen = document.getElementById("open")
-let mybutton = document.getElementById("save")
+const myOpen = document.getElementById("open")
+const mybutton = document.getElementById("save")
 const ulEl = document.getElementById("ul")
-let deleteBtn = document.getElementById("delete")
+const deleteBtn = document.getElementById("delete")
+const myUrl = document.getElementById("url")
 
 
 let thLeads = localStorage.getItem("myLeads")
@@ -20,6 +21,14 @@ if (Storage) {
     leads = Storage
     render(leads)
 }
+
+const tabs = [
+    {url: "https://www.jkuat.ac.ke"}
+]
+
+myUrl.addEventListener("click", function () {
+    console.log(tabs[0].url)
+})
 
 function render(args) {
     // log out the leads
@@ -93,4 +102,4 @@ mybutton.addEventListener("click", function () {
 
 /**
  * Function parameters
- */
+ */ 
