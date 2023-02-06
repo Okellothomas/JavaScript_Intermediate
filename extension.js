@@ -90,3 +90,7 @@ mybutton.addEventListener("click", function () {
 //             Hey ${recipient} how is it going? Cheers ${sender}
 //             `
 // console.log(email)
+
+/**
+ * Function parameters
+ */
