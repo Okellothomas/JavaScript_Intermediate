@@ -30,7 +30,7 @@ function render() {
         i++
     } while (i < leads.length)
 
-    ulEl.innerHTML = myListItems
+    ulEl.innerHTML = listItems
 }
 
 
@@ -59,10 +59,10 @@ function render() {
  * string laterals and templates
  */
 
-const recipient = "James"
-const sender = "Okello"
+// const recipient = "James"
+// const sender = "Okello"
 
-const email = `
-            Hey ${recipient} how is it going? Cheers ${sender}
-            `
-console.log(email)
+// const email = `
+//             Hey ${recipient} how is it going? Cheers ${sender}
+//             `
+// console.log(email)

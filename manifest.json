@@ -1,6 +1,6 @@
 {
-    "manifest_version": 1,
-    "version": "1.0",
+    "manifest_version": 3,
+    "version": "3",
     "name" : "okello thomas",
     "action" : {
         "default_popup": "extension.html",
