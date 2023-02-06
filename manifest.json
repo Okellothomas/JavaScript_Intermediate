@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name" : "okello thomas",
+    "action" : {
+        "default_popup": "extension.html",
+        "default_icon": "backone.jpg"
+    }
+}
