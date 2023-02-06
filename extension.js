@@ -7,7 +7,7 @@ let myOpen = document.getElementById("open")
 let mybutton = document.getElementById("save")
 const ulEl = document.getElementById("ul")
 
-localStorage.clear()
+
 let thLeads = localStorage.getItem("myLeads")
 let Storage = JSON.parse(thLeads)
 
@@ -19,6 +19,7 @@ if (Storage) {
     leads = Storage
     render()
 }
+
 mybutton.addEventListener("click", function () {
     leads.push(myOpen.value)
     myOpen.value = ""
