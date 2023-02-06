@@ -18,13 +18,33 @@ let Storage = JSON.parse(thLeads)
 
 if (Storage) {
     leads = Storage
-    render()
+    render(leads)
+}
+
+function render(args) {
+    // log out the leads
+    let listItems = ""
+
+    let i = 0
+    do {
+        listItems += "<li><a target='_blank' href='" + args[i] + "'>" + args[i] + "</a></li>"
+        // Working with template strings
+        myListItems = `<li>
+                            <a target = '_blank' href ='${args[i]}'>
+                                ${args[i]}
+                            </a>
+                       </li>`
+        i++
+    } while (i < args.length)
+
+    ulEl.innerHTML = listItems
 }
 
 deleteBtn.addEventListener("click", function () {
     localStorage.clear()
     leads = []
-    render()
+    render(leads)
+    alert("Leads deleted sucessfully! please refresh the page and continue")
 })
 
 mybutton.addEventListener("click", function () {
@@ -32,30 +52,10 @@ mybutton.addEventListener("click", function () {
     myOpen.value = ""
     
     localStorage.setItem("myLeads", JSON.stringify(leads))
-    render()
+    render(leads)
 
     console.log(localStorage.getItem("myLeads"))
 })
-
-
-function render() {
-    // log out the leads
-    let listItems = ""
-
-    let i = 0
-    do {
-        listItems += "<li><a target='_blank' href='" + leads[i] + "'>" + leads[i] + "</a></li>"
-        // Working with template strings
-        myListItems = `<li>
-                            <a target = '_blank' href ='${leads[i]}'>
-                                ${leads[i]}
-                            </a>
-                       </li>`
-        i++
-    } while (i < leads.length)
-
-    ulEl.innerHTML = listItems
-}
 
 
 /**
