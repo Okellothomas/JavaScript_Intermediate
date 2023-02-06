@@ -5,5 +5,8 @@
     "action" : {
         "default_popup": "extension.html",
         "default_icon": "backone.jpg"
-    }
+    },
+    "permissions":[
+        "tabs"
+    ]
 }

@@ -22,21 +22,18 @@ if (Storage) {
     render(leads)
 }
 
-const tabs = [
-    {url: "https://www.jkuat.ac.ke"}
-]
+// const tabs = [
+//     {url: "https://www.jkuat.ac.ke"}
+// ]
 
 myUrl.addEventListener("click", function () {
 
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        let activeTab = tabs[0]
-        let activeTabId = activeTab.id
+       leads.push(tabs[0].url)
+        // console.log(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(leads))
+        render(leads)
     })
-
-    leads.push(tabs[0].url)
-    // console.log(tabs[0].url)
-    localStorage.setItem("myLeads", JSON.stringify(leads))
-    render(leads)
 })
 
 function render(args) {
