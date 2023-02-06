@@ -6,6 +6,7 @@ let leads = []
 let myOpen = document.getElementById("open")
 let mybutton = document.getElementById("save")
 const ulEl = document.getElementById("ul")
+let deleteBtn = document.getElementById("delete")
 
 
 let thLeads = localStorage.getItem("myLeads")
@@ -19,6 +20,10 @@ if (Storage) {
     leads = Storage
     render()
 }
+
+deleteBtn.addEventListener("click", function () {
+    localStorage.clear()
+})
 
 mybutton.addEventListener("click", function () {
     leads.push(myOpen.value)
