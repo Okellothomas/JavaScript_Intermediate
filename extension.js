@@ -55,4 +55,13 @@ function render() {
 //     thank.innerHTML += "<p>" + "thank you so much" + "</p>"
 // })
 
+/**
+ * string laterals and templates
+ */
 
+const recipient = "James"
+
+const email = `
+            Hey ${recipient} how is it going? Cheers peer
+            `
+console.log(email)
