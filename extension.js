@@ -60,8 +60,9 @@ function render() {
  */
 
 const recipient = "James"
+const sender = "Okello"
 
 const email = `
-            Hey ${recipient} how is it going? Cheers peer
+            Hey ${recipient} how is it going? Cheers ${sender}
             `
 console.log(email)
