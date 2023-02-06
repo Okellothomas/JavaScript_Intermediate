@@ -23,6 +23,8 @@ if (Storage) {
 
 deleteBtn.addEventListener("click", function () {
     localStorage.clear()
+    leads = []
+    render()
 })
 
 mybutton.addEventListener("click", function () {
