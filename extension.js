@@ -27,7 +27,10 @@ const tabs = [
 ]
 
 myUrl.addEventListener("click", function () {
-    console.log(tabs[0].url)
+    leads.push(tabs[0].url)
+    // console.log(tabs[0].url)
+    localStorage.setItem("myLeads", JSON.stringify(leads))
+    render(leads)
 })
 
 function render(args) {
