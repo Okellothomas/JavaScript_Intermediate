@@ -2,13 +2,13 @@
  * first react code
  */
 const navbar = (
-    <>
+    <nav>
         <ul>
             <li>Pricing</li> 
             <li>About</li> 
             <li>Contact</li> 
         </ul>
-    </>
+    </nav>
 )
 
 ReactDOM.render(navbar, document.getElementById("nav"))
