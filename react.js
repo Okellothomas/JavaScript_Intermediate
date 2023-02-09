@@ -1,7 +1,17 @@
 /**
  * first react code
  */
+const navbar = (
+    <>
+        <ul>
+            <li>Pricing</li> 
+            <li>About</li> 
+            <li>Contact</li> 
+        </ul>
+    </>
+)
 
+ReactDOM.render(navbar, document.getElementById("nav"))
 ReactDOM.render(<>
     <p>Okello should have come early</p>
     <ol>
